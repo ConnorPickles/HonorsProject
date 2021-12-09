@@ -1,0 +1,19 @@
+The code for my honors project, completed in Fall 2021. If you prefer video explanations, see [this video](https://youtu.be/VjIPvkqwFAM) for a brief overview of the project and [this video](https://youtu.be/ysW2xjF5mdc) for a detailed explanation of everything I worked on.
+
+I also maintained a blog of the work I did for this project, documenting the process I went through including any problems and triumphs. You can find that here: https://connorpickles.github.io/HonorsProjectBlog/
+
+If you want to open up this project, you will need Visual Studio 2019 and Unreal Engine 5 installed. After installing those, simply clone the repo and open the Unreal project.
+
+# Project Motivation
+
+When I set out to find/create an honors project, my goal was to learn about tools that would help lead me into game development in the future that I'm not currently familiar with. For me, my biggest blind spot in this area is C++. The people I wound up talking to for this project suggested that I use Unreal Engine to create a geographically accurate re-creation of a coastline, then use the unique tools that a game engine provides (such as ray tracing) to determine sites for coastal kelp farms. Unreal Engine uses C++ as its companion language, and I had never used Unreal before, so this project idea fit my personal goals quite well.
+
+# Methodology
+
+Before I could start playing around with real data, I needed to learn Unreal Engine. Over the course of a couple of weeks, I went through about a dozen tutorial in a series designed to teach the basics of Unreal. These tutorials were centered around making games so not all of the information was relevant to what I would be working on, but I found everything interesting and was excited to be learning about a game engine. The most relevant realization I had while working through these tutorials was that you can customize and create your own Blueprints using C++, which is a very smart design.
+
+After this I began working on manupulating some real data, starting with LiDAR. Fortunately, Unreal has a plugin that handles importing LiDAR data. Once that was in my project, I worked on setting up realistic lighting. Unreal has a couple of lighting tools that, when combined, allow you to set up sunlight based on latitude and longitude, date, and time. Next, I realized I was going to have to start diving into C++ to manipulate my data, as I couldn't examine individual LiDAR points and Unreal had no built in support for Esri's ground cover data, which was the next thing I was trying to add into Unreal. At this point I spent some time setting up my own Hello World for C++ in Unreal, eventually setting up my own class that could communicate with Unreal. I then tried to install a C++ library to import the ground cover data and start working with it, but I ran into numerous issues with getting this library to install and eventually ran out of time for the project.
+
+# Conclusion
+
+I learned a lot over the course of this project. Unreal was fascinating to learn about given how interested I am in game design, and I had a lot of moments of "ooooh that's how people do that". I learned some lessons about manipulating large data, as the LiDAR data I was using was nearly 2 GB in size and Unreal displayed less than 10% of the points by default. Trying to display more completely tanked performance. I do wish I had gotten a bit more involved with C++, but I did learn a decent amount about how C++ works in the context of Unreal, and how you can expose your C++ code to Unreal by way of Blueprints. The way that you can create any custom functionality you want in C++ and then work with it in a much simpler way in Unreal is very interesting to me, and I think it's an intelligent design. I also learned that I enjoyed documenting the work I was doing, as it provided a good reference for my future self as well as some level of cathartic release for any issues I had been having.
