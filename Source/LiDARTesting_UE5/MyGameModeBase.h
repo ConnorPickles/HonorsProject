@@ -1,17 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "MyGameModeBase.generated.h"
-
-/**
- * 
- */
-UCLASS()
-class LIDARTESTING_UE5_API AMyGameModeBase : public AGameModeBase
-{
-	GENERATED_BODY()
-	
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb51efcc8f493b8fe1867e3598e82481d9b05f0d0728269a59106c553e6c4597
+size 327

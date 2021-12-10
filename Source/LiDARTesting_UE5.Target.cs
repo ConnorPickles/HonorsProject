@@ -1,15 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-using UnrealBuildTool;
-using System.Collections.Generic;
-
-public class LiDARTesting_UE5Target : TargetRules
-{
-	public LiDARTesting_UE5Target(TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-
-		ExtraModuleNames.AddRange( new string[] { "LiDARTesting_UE5" } );
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5781754a85275c8d67892578aa62a8bf8ea882b6b8d1543bd4eba1deaebb951f
+size 423

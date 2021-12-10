@@ -1,27 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "Testing.generated.h"
-
-/**
- * 
- */
-UCLASS(Blueprintable)
-class LIDARTESTING_UE5_API UTesting : public UObject
-{
-	GENERATED_BODY()
-
-	virtual void PostInitProperties() override;
-
-	virtual UWorld* GetWorld() const override;
-
-public:
-	UFUNCTION(BlueprintCallable)
-	void Import();
-
-	UFUNCTION(BlueprintImplementableEvent)
-	void BeginPlay();
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:96a18f4cfd1bb436ed939509a9c152adf3157ddcd54580e9900693924a87a304
+size 522
